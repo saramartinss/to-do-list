@@ -9,13 +9,45 @@
 <body>
     <nav class="navbar">
         <div class="navbar__content">
-            <img class="navbar__logo" src="../../assets/marca_mini_app.png" alt="Logo marca escrito do it now com as palavras separadas com um ícone laranja com um símbolo de mais">
+            <img class="navbar__logo" src="../../assets/marca_mini_app.png" alt="Logo marca">
             <div class="navbar__user">
                 <img src="../../assets/avatar.png" alt="avatar masculino">
                 <p>Usuário 1</p>
             </div>
         </div>
     </nav>
+    <main class="main container">
+        <div class="lista">
+            <div class="lista__titulo">
+                <h2>Listas</h2>
+                <a><img src="../../assets/botao_adicionar.png" alt="botão adicionar"></a>
+            </div>
+            <ul class="listas">
+                <li class="listas__item-2">
+                    <div class="listas__item-2-titulo">
+                        <div class="listas__item-2-nome">
+                            <img src="../../assets/icone_lista.png" alt="icone lista">
+                            <p>Lista 2</p>
+                        </div>
+                        <div class="listas__item-2-icones">
+                            <button>
+                                <img src="../../assets/icone_editar.png" alt="icone deletar">
+                            </button>
+                            <button>
+                                <img src="../../assets/icone_deletar_lista.png" alt="icone deletar">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="listas__item-2-adicionar-tarefa">
+                        <label for="adicionarTarefa">
+                            <input type="text" id="adicionarTarefa">
+                        </label>
+                        <button><img src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
     <script src="lists.js"></script>
 </body>
 </html>
