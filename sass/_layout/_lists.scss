@@ -38,13 +38,21 @@
             border: 1px solid orange;
             border-radius: 5px;
             margin: 0 auto;
+            display: flex;
+            padding: 3px;
             input{
                 width: 360px;
+                height: 100%;
                 border: none;
             }
             button{
                 border: none;
                 background: white;
+                width: 22px;
+                height: 22px;
+                img{
+
+                }
             }
         }
     }
