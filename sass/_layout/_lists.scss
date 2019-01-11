@@ -26,34 +26,48 @@
 
 .box{
     border-radius: 5px;
-    border: 1px solid green;
+    border: 1px solid rgb(143, 206, 183);
 }
+
+.lista__titulo{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-top: 20px;
+}
+
 .listas{
     &__item{
         padding: 10px;
-        border-bottom: 1px solid green;
+        border-bottom: 1px solid rgb(143, 206, 183);
         &-titulo{
             display: flex;
             justify-content: space-between;
         }
         &-nome{
             display: flex;
+            align-items: center;
             img{
-                height: 18px;
+                height: 15px;
+                margin-right: 10px;
             }
         }
         &-tarefas{
-            .lista-2{
+            .lista{
                 &__tarefa-1{
                     padding: 10px 5px;
                     &-nome{
                         display: flex;
                         justify-content: space-between;
                         padding: 5px 0;
-                        border-bottom: 1px solid green;
+                        border-bottom: 1px solid rgb(143, 206, 183);
                         div{
                             display: flex;
+                            align-items: center;
                         }
+                    }
+                    input{
+                        margin-right: 5px;
                     }
                 }
                 &__subtarefa{
