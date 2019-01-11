@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+body{
+    color: rgb(117, 102, 91);
+}
+
 ul, li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
 }
 
 .container {
