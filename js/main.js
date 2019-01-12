@@ -3,14 +3,17 @@ const lista = document.querySelector('.listas')
 lista.addEventListener('click', function(event){
     if(event.target.tagName === 'IMG'){
         if(event.target.classList.contains('lista__substarefa-deletar')){
-            deletar(event)
+            deletar(event.target)
+        }
+        if(event.target.classList.contains('lista__tarefa-deletar')){
+            deletar(event.target.parentNode)
         }
     }
 })
 
-function deletar(event){
-    event.target.parentNode.classList.add('fadeOut')
+function deletar(evento){
+    evento.parentNode.classList.add('fadeOut')
     setTimeout(function(){
-        event.target.parentNode.remove()
+        evento.parentNode.remove()
     }, 500)
 }
