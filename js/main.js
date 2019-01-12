@@ -66,6 +66,15 @@ toDoList.addEventListener('click', function (event) {
             criaSubtarefa(lista, titulo)
             input.value = ''
         }
+        if (event.target.classList.contains('listas__botao-adicionar-tarefa')){
+            const div = event.target.parentNode
+            const input = div.firstChild.nextSibling.firstChild.nextSibling
+            console.log(input)
+            const titulo = input.value
+            const lista = div.parentNode.childNodes[5]
+            criaTarefa(lista, titulo)
+            input.value = ''
+        }
     }
 })
 
