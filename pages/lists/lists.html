@@ -41,12 +41,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="listas__item-adicionar-tarefa adicionar-item">
-                                <label for="adicionarTarefa">
-                                    <input class="listas__input-adicionar-tarefa" type="text" placeholder="Adicionar tarefa">
-                                </label>
-                                <img class="listas__botao-adicionar-tarefa" src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa">
-                            </div>
+                    
                             <ul class="listas__item-tarefas container-tarefas"></ul>
                     </li>
                     <li class="listas__item">
@@ -80,9 +75,10 @@
                                     <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
                                         alt="icone deletar tarefa">
                                 </div>
+                                <ul class="lista__subtarefas"></ul>
                                 <div class="lista__adicionar-subtarefa adicionar-item">
                                     <label for="adicionarSubtarefa">
-                                        <input type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
+                                        <input class="listas__input-adicionar-subtarefa" type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
                                     </label>
                                     <img class="lista__botao-adicionar-subtarefa" src="../../assets/botao_adicionar.png"
                                         alt="botão adicionar subtarefa">
@@ -94,8 +90,7 @@
                                         <input type="checkbox" id="checkboxTarefa1" onclick="tarefaConcluida()">
                                         <p>Tarefa 2</p>
                                     </div>
-                                    <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                        alt="icone deletar tarefa">
+                                    <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar tarefa">
                                 </div>
                                 <ul class="lista__subtarefas">
                                     <li class="lista__subtarefa">
@@ -103,51 +98,42 @@
                                             <input type="checkbox" id="checkboxSubtarefa1" onclick="tarefaConcluida()">
                                             <p>Subtarefa 1</p>
                                         </div>
-                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                            alt="icone deletar substarefa">
+                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar substarefa">
                                     </li>
                                     <li class="lista__subtarefa">
                                         <div>
                                             <input type="checkbox" id="checkboxSubtarefa2" onclick="tarefaConcluida()">
                                             <p>Subtarefa 2</p>
                                         </div>
-                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                            alt="icone deletar substarefa">
+                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar substarefa">
                                     </li>
                                     <li class="lista__subtarefa">
                                         <div>
                                             <input type="checkbox" id="checkboxSubtarefa3" onclick="tarefaConcluida()">
                                             <p>Subtarefa 3</p>
                                         </div>
-                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                            alt="icone deletar substarefa">
+                                        <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar substarefa">
                                     </li>
-                                    <div class="lista__adicionar-subtarefa adicionar-item">
+                                </ul>
+                                <div class="lista__adicionar-subtarefa adicionar-item">
                                         <label for="adicionarSubtarefa">
-                                            <input type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
+                                            <input class="listas__input-adicionar-subtarefa" type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
                                         </label>
                                         <img class="lista__botao-adicionar-subtarefa" src="../../assets/botao_adicionar.png"
                                             alt="botão adicionar subtarefa">
                                     </div>
-                                </ul>
                             </li>
                             <li class="lista__tarefa">
-                                <div class="lista__tarefa-nome">
-                                    <div>
-                                        <input type="checkbox" id="checkboxTarefa1" onclick="tarefaConcluida()">
-                                        <p>Tarefa 3</p>
-                                    </div>
-                                    <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                        alt="icone deletar tarefa">
-                                </div>
-                                <div class="lista__adicionar-subtarefa adicionar-item">
-                                    <label for="adicionarSubtarefa">
-                                        <input type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
-                                    </label>
-                                    <img class="lista__botao-adicionar-subtarefa" src="../../assets/botao_adicionar.png"
-                                        alt="botão adicionar subtarefa">
-                                </div>
-                                <ul class="listas__item-tarefas container-tarefas"></ul>
+                                    <div class="lista__tarefa-nome">
+                                            <div>
+                                                <input type="checkbox" id="checkboxTarefa1" onclick="tarefaConcluida()">
+                                                <p>Tarefa 3</p>
+                                            </div>
+                                            <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
+                                                alt="icone deletar tarefa">
+                                        </div>
+                                        <ul class="lista__subtarefas"></ul>
+                                        
                             </li>
                         </ul>
                     </li>
