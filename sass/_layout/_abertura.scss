@@ -1,0 +1,31 @@
+main{
+    height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 250px;
+    }
+    &__img-mini-app{
+        padding: 40px 0;
+    }
+    &__opcoes{
+        display: flex;
+        flex-direction: column;
+        &-criar-conta{
+            background: rgb(239, 119, 52);
+            color: white;
+            margin-bottom: 5px;
+        }
+        &-entrar{
+            background: rgb(211, 206, 61);
+            color: rgb(84, 66, 54);
+        }
+    }
+    
+}
