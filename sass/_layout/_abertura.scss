@@ -1,5 +1,6 @@
-main{
+.main{
     height: 100vh;
+    background: rgba(242, 240, 196, .7);    
 }
 
 .app{
@@ -9,7 +10,7 @@ main{
     justify-content: center;
     align-items: center;
     img{
-        width: 250px;
+        width: 260px;
     }
     &__img-mini-app{
         padding: 40px 0;
@@ -26,6 +27,5 @@ main{
             background: rgb(211, 206, 61);
             color: rgb(84, 66, 54);
         }
-    }
-    
+    }   
 }
