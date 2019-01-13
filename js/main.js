@@ -74,7 +74,44 @@ toDoList.addEventListener('click', function (event) {
     }
 })
 
-function tarefaConcluida(input){
+
+
+function subtarefaConcluida(input){
     input.nextElementSibling.classList.toggle('checked')
+    const listaSubtarefas = input.parentNode.parentNode.parentNode
+    const nodeListInputCheckbox = listaSubtarefas.querySelectorAll('.checkboxSubtarefa')
+    const inputsCheckbox = Array.prototype.slice.call(nodeListInputCheckbox)
+
+
+
+
+
+
     
+}
+
+function tarefaConcluida(input){
+    const listaSubtarefas = input.parentNode.parentNode.parentNode
+    const nodeListInputCheckbox = listaSubtarefas.querySelectorAll('.checkboxSubtarefa')
+    const inputsCheckbox = Array.prototype.slice.call(nodeListInputCheckbox)
+
+    input.nextElementSibling.classList.toggle('checked')
+
+    if(input.nextElementSibling.classList.contains('checked')){
+        for(const box of inputsCheckbox){
+            if(box.nextElementSibling.classList.contains('lista__subtarefa-nome')){
+                box.nextElementSibling.classList.remove('lista__subtarefa-nome')
+                box.nextElementSibling.classList.add('checked')
+                box.checked = true
+            }
+        }
+    } else {
+        for(const box of inputsCheckbox){
+            if(box.nextElementSibling.classList.contains('checked')){
+                box.nextElementSibling.classList.remove('checked')
+                box.nextElementSibling.classList.add('lista__subtarefa-nome')
+                box.checked = false
+            }
+        }
+    }    
 }
