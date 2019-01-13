@@ -1,8 +1,5 @@
 const toDoList = document.querySelector('.listas')
 
-let inputAddSubtarefa = Array.prototype.slice.call(document.querySelectorAll('.listas__input-adicionar-subtarefa'))
-let botaoAddSubtarefa = Array.prototype.slice.call(document.querySelectorAll('.lista__botao-adicionar-subtarefa'))
-
 function criaSubtarefa(lista, titulo){
     const linha = document.createElement('li')
     linha.classList.add('lista__subtarefa')
@@ -69,7 +66,6 @@ toDoList.addEventListener('click', function (event) {
         if (event.target.classList.contains('listas__botao-adicionar-tarefa')){
             const div = event.target.parentNode
             const input = div.firstChild.nextSibling.firstChild.nextSibling
-            console.log(input)
             const titulo = input.value
             const lista = div.parentNode.childNodes[5]
             criaTarefa(lista, titulo)
@@ -78,3 +74,7 @@ toDoList.addEventListener('click', function (event) {
     }
 })
 
+function tarefaConcluida(input){
+    input.nextElementSibling.classList.toggle('checked')
+    
+}
