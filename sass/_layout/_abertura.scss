@@ -15,15 +15,15 @@
     &__img-mini-app{
         padding: 40px 0;
     }
-    &__opcoes{
+    &__option{
         display: flex;
         flex-direction: column;
-        &-criar-conta{
+        &-signup{
             background: rgb(239, 119, 52);
             color: white;
             margin-bottom: 5px;
         }
-        &-entrar{
+        &-login{
             background: rgb(211, 206, 61);
             color: rgb(84, 66, 54);
         }
