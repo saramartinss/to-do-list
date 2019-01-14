@@ -3,29 +3,31 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Abertura</title>
+    <title>Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css" />
 </head>
 
 <body background="../../assets/pattern.png">
     <main class="main">
-        <div class="app container">
-            <img src="../../assets/marca_mini_app.png" alt="imagem do logo">
-            <div>
-                <img src="../../assets/seta.png" alt="imagem de uma seta">
-                <img src="../../assets/camera.png" alt="imagem de uma camera">
-                <p>Criar Conta</p>
-                <label for="inputName">
-                    <input type="text" id="inputName" placeholder="Nome">
-                </label>
-                <label for="inputEmail">
-                    <input type="email" id="inputEmail" placeholder="Endereço de e-mail">
-                </label>
-                <label for="inputSenha">
-                    <input type="text" id="inputSenha" placeholder="Senha">
-                </label>
-                <a href="" class="button">Criar Conta</a>
+        <div class="signup container">
+            <img src="../../assets/marca_mini_app.png" class="signup__logo" alt="imagem do logo">
+            <div class="cadastro container">
+                <img src="../../assets/seta.png" class="cadastro__voltar" alt="imagem de uma seta">
+                <img src="../../assets/camera.png" class="cadastro__camera" alt="imagem de uma camera">
+                <p class="cadastro__criar-conta">Criar Conta</p>
+                <div class="cadastro__form">
+                    <label for="inputName">
+                        <input type="text" class="cadastro__nome" id="inputName" placeholder="Nome">
+                    </label>
+                    <label for="inputEmail">
+                        <input type="email" class="cadastro__email" id="inputEmail" placeholder="Endereço de e-mail">
+                    </label>
+                    <label for="inputSenha">
+                        <input type="text" class="cadastro__senha" id="inputSenha" placeholder="Senha">
+                    </label>
+                </div>
+                <a href="" class="button cadastro__botao">Criar Conta</a>
             </div>
         </div>
     </main>

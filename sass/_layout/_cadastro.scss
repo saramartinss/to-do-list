@@ -1,0 +1,47 @@
+.signup{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__logo{
+        width: 250px;
+    }
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(249, 244, 194);
+    height: 450px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px #888888;
+    &__voltar{
+        width: 12px;
+        align-self: flex-start;
+        margin-left: 15px;
+    }
+    &__camera{
+        width: 60px;
+        margin: 25px 0 15px 0;
+    }
+    &__criar-conta{
+        font-size: 22px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    input{
+        width: 350px;
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+    &__botao{
+        background: rgb(239, 119, 52);
+        color: #fff;
+    }
+}
