@@ -8,7 +8,7 @@
         width: 250px;
     }
 }
-.cadastro{
+.register{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     height: 450px;
     margin-top: 20px;
     box-shadow: 0px 4px 6px #888888;
-    &__voltar{
+    &__back{
         width: 12px;
         align-self: flex-start;
         margin-left: 15px;
@@ -25,7 +25,7 @@
         width: 60px;
         margin: 25px 0 15px 0;
     }
-    &__criar-conta{
+    &__create{
         font-size: 22px;
     }
     &__form{
@@ -43,7 +43,7 @@
         padding: 5px 10px;
         margin-top: 10px;
     }
-    &__botao{
+    &__button{
         background: rgb(239, 119, 52);
         color: #fff;
         align-self: center;
