@@ -21,7 +21,7 @@
     }
 }
 
-.container-tasks{
+.container-tarefas{
     width: 400px;
     margin: 0 auto;
 }
@@ -31,21 +31,21 @@
     border: 1px solid rgb(143, 206, 183);
 }
 
-.list__title{
+.lista__titulo{
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
 }
 
-.lists{
+.listas{
     &__item{
         padding: 10px;
         border-bottom: 1px solid rgb(143, 206, 183);
-        &-title{
+        &-titulo{
             display: flex;
             justify-content: space-between;
         }
-        &-name{
+        &-nome{
             display: flex;
             align-items: center;
             img{
@@ -53,11 +53,11 @@
                 margin-right: 10px;
             }
         }
-        &-tasks{
-            .list{
-                &__task{
+        &-tarefas{
+            .lista{
+                &__tarefa{
                     padding: 10px 5px;
-                    &-name{
+                    &-nome{
                         display: flex;
                         justify-content: space-between;
                         padding: 5px 0;
@@ -71,7 +71,7 @@
                         margin-right: 5px;
                     }
                 }
-                &__subtask{
+                &__subtarefa{
                     display: flex;
                     justify-content: space-between;
                     padding: 5px 0 0 10px;
@@ -79,7 +79,7 @@
                         display: flex;
                     }
                 }
-                &__add-subtask{
+                &__adicionar-subtarefa{
                     margin-top: 5px;
                 }
             }
