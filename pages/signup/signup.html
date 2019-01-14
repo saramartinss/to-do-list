@@ -16,21 +16,21 @@
                 <img src="../../assets/seta.png" class="cadastro__voltar" alt="imagem de uma seta">
                 <img src="../../assets/camera.png" class="cadastro__camera" alt="imagem de uma camera">
                 <p class="cadastro__criar-conta">Criar Conta</p>
-                <form class="cadastro__form" action="/lists">
-                    <label for="inputName">
-                        <input type="text" class="cadastro__nome" id="inputName" placeholder="Nome">
-                    </label>
-                    <label for="inputEmail">
-                        <input type="email" class="cadastro__email" id="inputEmail" placeholder="Endereço de e-mail">
-                    </label>
-                    <label for="inputSenha">
-                        <input type="text" class="cadastro__senha" id="inputSenha" placeholder="Senha">
-                    </label>
-                    <button href="" class="button cadastro__botao" type="submit">Criar Conta</button>
+                <form class="cadastro__form" action="/pages/lists/lists.html" method="POST" name="contact">
+                    <label for="name"></label>
+                    <input type="text" class="cadastro__nome" id="name" name="name" placeholder="Nome">
+                    <label for="email"></label>
+                    <input type="email" class="cadastro__email" id="email" name="email" placeholder="Endereço de e-mail">
+                    <label for="password"></label>
+                    <input type="password" class="cadastro__senha" id="password" name="password" placeholder="Senha">
+                    <button class="button cadastro__botao" type="submit">Criar Conta</button>
                 </form>
             </div>
         </div>
     </main>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
