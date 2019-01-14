@@ -1,4 +1,4 @@
-.login{
+.signin{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
         width: 250px;
     }
 }
-.entrar{
+.login{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +16,12 @@
     height: 450px;
     margin-top: 20px;
     box-shadow: 0px 4px 6px #888888;
-    &__voltar{
+    &__back{
         width: 12px;
         align-self: flex-start;
         margin-left: 15px;
     }
-    &__entrar{
+    &__enter{
         font-size: 22px;
         margin-top: 50px;
     }
@@ -41,7 +41,7 @@
         padding: 5px 10px;
         margin-top: 10px;
     }
-    &__botao{
+    &__button{
         background: rgb(211, 206, 61);
         align-self: center;
         margin-top: 30px;
