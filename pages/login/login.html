@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Entrar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css" />
+</head>
+
+<body background="../../assets/pattern.png">
+    <main class="main">
+        <div class="login container">
+            <img src="../../assets/marca_mini_app.png" class="login__logo" alt="imagem do logo">
+            <div class="entrar container">
+                <img src="../../assets/seta.png" class="entrar__voltar" alt="imagem de uma seta">
+                <p class="entrar__entrar">Entrar</p>
+                <form class="entrar__form" action="/pages/lists/lists.html" method="POST" name="contact">
+                    <label for="name"></label>
+                    <input type="text" class="entrar__nome" id="name" name="name" placeholder="Nome">
+                    <label for="password"></label>
+                    <input type="password" class="entrar__senha" id="password" name="password" placeholder="Senha">
+                    <button class="button entrar__botao" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
