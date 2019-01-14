@@ -1,4 +1,4 @@
-let form = $('.cadastro__form');
+let form = $('.register__form');
 
 form.validate({
     

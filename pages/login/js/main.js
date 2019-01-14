@@ -1,4 +1,4 @@
-let form = $('.entrar__form');
+let form = $('.login__form');
 
 form.validate({
     
