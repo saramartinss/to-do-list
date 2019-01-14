@@ -1,6 +1,23 @@
 .criar-lista{
     &__input{
         width: 480px;
+        &-list-name {
+            margin: 10px 0 auto 0;
+            border: 1px solid orange;
+            border-radius: 5px;
+            width: 525px;
+            height: 30px;
+            padding-left: 10px;
+        }
+    }
+    &__form{
+        span{
+            color: red;
+            margin-left: 11px;
+        }
+    } 
+    &__task-name {
+        margin: 15px 0 auto 0;
     }
     &__btn{
         display: flex;
