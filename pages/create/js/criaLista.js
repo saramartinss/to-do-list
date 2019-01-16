@@ -20,7 +20,7 @@ btnCreateList.addEventListener('click', function(e){
     const div = `<div class="lists__item-title">
     <div class="lists__item-name">
         <img src="../../assets/icone_lista.png" alt="icone lista">
-        <p>${inputListName.value}</p>
+        <p class="lists__list-name" ondblclick="trocaNome(this)">${inputListName.value}</p>
     </div>
     <div class="lists__item-icons">
         <img src="../../assets/icone_editar.png" alt="icone deletar">
