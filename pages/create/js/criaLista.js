@@ -1,18 +1,3 @@
-let btnAddTask = document.querySelector('.lists__btn-add-task')
-let box = document.querySelector('.create-list__inputs')
-
-btnAddTask.addEventListener('click', function(){
-    const div = document.createElement('div')
-    div.classList.add('create-list__task-name')
-    div.classList.add('add-task')
-    const tarefa = `<label for="adicionarTarefa">
-    <input class="create-list__input-task-name" type="text" placeholder="Adicionar tarefa">
-</label>
-`
-    div.innerHTML = tarefa
-    box.appendChild(div)
-})
-
 const btnCreateList = document.querySelector('.create-list__create')
 const inputListName = document.querySelector('.create-list__input-list-name')
 const inputTaskName = document.querySelector('.create-list__input-task-name')
