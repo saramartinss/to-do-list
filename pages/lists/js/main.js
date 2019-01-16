@@ -21,6 +21,7 @@ toDoList.addEventListener('click', function (event) {
             const input = div.firstChild.nextSibling.firstChild.nextSibling
             const titulo = input.value
             const lista = div.parentNode.childNodes[5]
+            console.log(lista)
             criaTarefa(lista, titulo)
             input.value = ''
         }

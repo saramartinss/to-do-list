@@ -26,15 +26,15 @@
             <div class="box__criar-lista">
                 <form class="criar-lista__form">
                     <label for="adicionarTarefa"></label>
-                        <input class="criar-lista__input criar-lista__input-list-name" name="listName" type="text"
-                            placeholder="Digite o nome da lista...">
-                    
-
-                    <div class="criar-lista__task-name adicionar-item">
-                        <label for="adicionarTarefa">
-                            <input class="criar-lista__input" type="text" placeholder="Adicionar tarefa">
-                        </label>
-                        <img class="listas__botao-adicionar-tarefa" src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa">
+                    <input class="criar-lista__input criar-lista__input-list-name" name="listName" type="text"
+                        placeholder="Digite o nome da lista...">
+                    <div class="criar-lista__inputs">
+                        <div class="criar-lista__task-name adicionar-item">
+                            <label for="adicionarTarefa">
+                                <input class="criar-lista__input-task-name" type="text" placeholder="Adicionar tarefa">
+                            </label>
+                            <img class="listas__botao-adicionar-tarefa" src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa">
+                        </div>
                     </div>
                     <div class="criar-lista__btn">
                         <button class="button criar-lista__cancel">Cancelar</button>
@@ -54,27 +54,29 @@
                                 <img src="../../assets/icone_deletar_lista.png" alt="icone deletar">
                             </div>
                         </div>
-                        <ul class="listas__item-tarefas container-tarefas"></ul>
-                    </li>
-                    <ul class="listas__item-tarefas container-tarefas">
-                        <li class="lista__tarefa">
-                            <div class="lista__tarefa-nome">
-                                <div>
-                                    <input type="checkbox" class="lista__tarefa-checkbox" id="checkboxTarefa2" onclick="tarefaConcluida(this)">
-                                    <p class="lista__tarefa-titulo">Tarefa 1</p>
+                        <ul class="listas__item-tarefas container-tarefas">
+                            <li class="lista__tarefa">
+                                <div class="lista__tarefa-nome">
+                                    <div>
+                                        <input type="checkbox" class="lista__tarefa-checkbox" id="checkboxTarefa1" onclick="tarefaConcluida(this)">
+                                        <p class="lista__tarefa-titulo">Tarefa 1</p>
+                                    </div>
+                                    <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
+                                        alt="icone deletar tarefa">
                                 </div>
-                                <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                    alt="icone deletar tarefa">
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </main>
     <script src="./js/jquery.slim.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../lists/js/main.js"></script>
+    <script src="../lists/js/deletar.js"></script>
+    <script src="./js/adicionarTarefa.js"></script>
+    <script src="../lists/js/criarTarefa.js"></script>
 </body>
 
 </html>
