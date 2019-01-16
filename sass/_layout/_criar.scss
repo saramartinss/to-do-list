@@ -7,9 +7,16 @@
         input {
             width: 485px;
         }
+        .add-task{
+            height: 35px;
+        }
     } 
     &__task-name {
         margin: 15px 0 auto 0;
+        .lists__btn-add-task{
+            height: 23px;
+            align-self: center;
+        }
     }
     &__btn{
         display: flex;
