@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Criar Lista</title>
+    <title>Lists</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css" />
 </head>
@@ -19,67 +19,53 @@
         </div>
     </nav>
     <main class="container">
-        <div class="lista">
-            <div class="lista__titulo">
+        <div class="list">
+            <div class="list__title">
                 <h2>Criar Lista</h2>
+                <a href="../create/create.html"><img src="../../assets/botao_adicionar.png" alt="botão adicionar"></a>
             </div>
-            <div class="box__criar-lista">
-                <form class="criar-lista__form">
-                    <div class="add-task">
+            
+            <form class="create-list__form">
+                <div class="add-task">
+                    <label for="adicionarTarefa">
+                    <input class="create-list__input-list-name" name="listName" type="text"
+                        placeholder="Digite o nome da lista...">
+                    </label>
+                </div>
+                <div class="create-list__inputs">
+                    <div class="create-list__task-name add-task">
                         <label for="adicionarTarefa">
-                        <input class="criar-lista__input-list-name" name="listName" type="text"
-                            placeholder="Digite o nome da lista...">
+                            <input class="create-list__input-task-name" type="text" placeholder="Adicionar tarefa">
                         </label>
+                        <img class="lists__btn-add-task" src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa">
                     </div>
-                    <div class="criar-lista__inputs">
-                        <div class="criar-lista__task-name add-task">
-                            <label for="adicionarTarefa">
-                                <input class="criar-lista__input-task-name" type="text" placeholder="Adicionar tarefa">
-                            </label>
-                            <img class="listas__botao-adicionar-tarefa" src="../../assets/botao_adicionar.png" alt="botão adicionar tarefa">
-                        </div>
-                    </div>
-                    <div class="criar-lista__btn">
-                        <button class="button button-green criar-lista__cancel">Cancelar</button>
-                        <button class="button button-orange criar-lista__create" type="submit">Criar Lista</button>
-                    </div>
-                </form>
+                </div>
+                <div class="create-list__btn">
+                    <button class="button button-green create-list__cancel">Cancelar</button>
+                    <button class="button button-orange create-list__create" type="submit">Criar Lista</button>
+                </div>
+            </form>
 
-                <ul class="listas">
-                    <li class="listas__item">
-                        <div class="listas__item-titulo">
-                            <div class="listas__item-nome">
+            <div class="box">
+                <ul class="lists">
+                    <li class="lists__item">
+                        <div class="lists__item-title">
+                            <div class="lists__item-name">
                                 <img src="../../assets/icone_lista.png" alt="icone lista">
                                 <p>Lista 1</p>
                             </div>
-                            <div class="listas__item-icones">
+                            <div class="lists__item-icon">
                                 <img src="../../assets/icone_editar.png" alt="icone deletar">
                                 <img src="../../assets/icone_deletar_lista.png" alt="icone deletar">
                             </div>
                         </div>
-                        <ul class="listas__item-tarefas container-tarefas">
-                            <li class="lista__tarefa">
-                                <div class="lista__tarefa-nome">
-                                    <div>
-                                        <input type="checkbox" class="lista__tarefa-checkbox" id="checkboxTarefa1" onclick="tarefaConcluida(this)">
-                                        <p class="lista__tarefa-titulo">Tarefa 1</p>
-                                    </div>
-                                    <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png"
-                                        alt="icone deletar tarefa">
-                                </div>
-                            </li>
-                        </ul>
+                        <ul class="lists__item-tasks container-tasks"></ul>
                     </li>
                 </ul>
             </div>
         </div>
     </main>
-    <script src="./js/jquery.slim.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="../lists/js/main.js"></script>
-    <script src="../lists/js/deletar.js"></script>
     <script src="./js/adicionarTarefa.js"></script>
-    <script src="../lists/js/criarTarefa.js"></script>
 </body>
 
 </html>
