@@ -19,13 +19,7 @@
         display: flex;
         flex-direction: column;
         &-signup{
-            background: rgb(239, 119, 52);
-            color: white;
             margin-bottom: 5px;
-        }
-        &-login{
-            background: rgb(211, 206, 61);
-            color: rgb(84, 66, 54);
         }
     }   
 }

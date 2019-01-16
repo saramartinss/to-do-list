@@ -3,5 +3,13 @@
     padding: 8px 50px;
     border-radius: 4px;
     text-align: center;
-    width: 200px;
+    font-size: 16px;
+    &-orange{
+        background: #ef7734;
+        color: white;
+    }
+    &-green{
+        background: #d3ce3d;
+        color: #544236;
+    }
 }
