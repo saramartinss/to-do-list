@@ -1,12 +1,12 @@
 function criaSubtarefa(lista, titulo){
     const linha = document.createElement('li')
-    linha.classList.add('lista__subtarefa')
+    linha.classList.add('list__subtask')
     const subtarefa =
     `<div>
-        <input type="checkbox" class="checkboxSubtarefa" onclick="subtarefaConcluida(this)">
-        <p class="lista__subtarefa-nome">${titulo}</p>
+        <input type="checkbox" class="checkboxSubtask" onclick="subtarefaConcluida(this)">
+        <p class="list__subtask-name">${titulo}</p>
     </div>
-    <img class="lista__substarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar substarefa">`
+    <img class="list__subtask-delete" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar substarefa">`
     linha.innerHTML = subtarefa
     lista.appendChild(linha)
 }

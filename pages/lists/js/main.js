@@ -1,14 +1,14 @@
-const toDoList = document.querySelector('.listas')
+const toDoList = document.querySelector('.lists')
 
 toDoList.addEventListener('click', function (event) {
     if (event.target.tagName === 'IMG') {
-        if (event.target.classList.contains('lista__substarefa-deletar')) {
+        if (event.target.classList.contains('list__subtask-delete')) {
             deletar(event.target)
         }
-        if (event.target.classList.contains('lista__tarefa-deletar')) {
+        if (event.target.classList.contains('list__task-delete')) {
             deletar(event.target.parentNode)
         }
-        if (event.target.classList.contains('lista__botao-adicionar-subtarefa')){
+        if (event.target.classList.contains('list__btn-add-subtask')){
             const div = event.target.parentNode
             const input = div.firstChild.nextSibling.firstChild.nextSibling
             const titulo = input.value
@@ -16,12 +16,11 @@ toDoList.addEventListener('click', function (event) {
             criaSubtarefa(lista, titulo)
             input.value = ''
         }
-        if (event.target.classList.contains('listas__botao-adicionar-tarefa')){
+        if (event.target.classList.contains('lists__btn-add-task')){
             const div = event.target.parentNode
             const input = div.firstChild.nextSibling.firstChild.nextSibling
             const titulo = input.value
             const lista = div.parentNode.childNodes[5]
-            console.log(lista)
             criaTarefa(lista, titulo)
             input.value = ''
         }
