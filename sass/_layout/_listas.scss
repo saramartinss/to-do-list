@@ -22,7 +22,7 @@
 }
 
 .container-tarefas{
-    width: 400px;
+    width: 440px;
     margin: 0 auto;
 }
 
@@ -53,6 +53,9 @@
                 margin-right: 10px;
             }
         }
+        &-adicionar-tarefa{
+            width: 440px;
+        }
         &-tarefas{
             .lista{
                 &__tarefa{
@@ -80,12 +83,18 @@
                     }
                 }
                 &__adicionar-subtarefa{
-                    margin-top: 5px;
+                    margin-left: 10px;
                 }
             }
         }
     }
     .item-3{
         border-bottom: none;
+    }
+    &__input-adicionar-tarefa{
+        width: 400px;
+    }
+    &__input-adicionar-subtarefa{
+        width: 380px;
     }
 }

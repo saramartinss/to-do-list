@@ -11,7 +11,7 @@ function criaTarefa(lista, titulo){
         <img class="lista__tarefa-deletar" src="../../assets/icone_deletar_tarefa-subtarefa.png" alt="icone deletar tarefa">
     </div>
     <ul class="lista__subtarefas"></ul>
-    <div class="lista__adicionar-subtarefa adicionar-item">
+    <div class="lista__adicionar-subtarefa add-task">
         <label for="adicionarSubtarefa">
             <input class="listas__input-adicionar-subtarefa" type="text" id="adicionarSubtarefa" placeholder="Adicionar subtarefa">
         </label>
