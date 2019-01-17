@@ -43,4 +43,8 @@ btnCreateList.addEventListener('click', function(e){
         input.value = ''
         inputListName.value = ''
     }
+
+    while(divDeInputs.childNodes.length > 2){
+        divDeInputs.removeChild(divDeInputs.lastChild)
+    }
 })
