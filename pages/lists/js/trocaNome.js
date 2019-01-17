@@ -1,5 +1,5 @@
 function trocaNome(p){
-    p.textContent = ''
+    let lastName = p.textContent
 
     let div = p.parentNode
     p.remove()
@@ -12,11 +12,21 @@ function trocaNome(p){
         if (key === 13) { 
             const newListName = input.value
             input.remove()
-            const newParagraph = `
-            <img src="../../assets/icone_lista.png" alt="icone lista">
-            <p class="lists__list-name" ondblclick="trocaNome(this)">${newListName}</p>
-            `
-            div.innerHTML = newParagraph
+            if(input.value.length > 0){
+                const newParagraph = `
+                <img src="../../assets/icone_lista.png" alt="icone lista">
+                <p class="lists__list-name" ondblclick="trocaNome(this)">${newListName}</p>
+                `
+                div.innerHTML = newParagraph
+            } else {
+                const newParagraph = `
+                <img src="../../assets/icone_lista.png" alt="icone lista">
+                <p class="lists__list-name" ondblclick="trocaNome(this)">${lastName}</p>
+                `
+                div.innerHTML = newParagraph
+            }
+            
+            
         }
     })
 }
