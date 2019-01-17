@@ -18,4 +18,5 @@ btnAddTask.addEventListener('click', function(){
     </label>`
     div.innerHTML = tarefa
     box.appendChild(div)
+
 })
