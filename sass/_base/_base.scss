@@ -19,7 +19,9 @@ a {
 
 @font-face {
     font-family: sfProDisplay;
-    src: url('../fonts/SF-Pro-Display-Light.otf');
+    src: url('../fonts/SF-Pro-Display-Light.otf') format('otf'),
+    url('../fonts/sf-pro-display-light-webfont.woff') format('woff'),
+    url('../fonts/sf-pro-display-light-webfont.woff2') format('woff2');
 }
 
 .container {
