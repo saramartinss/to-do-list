@@ -204,6 +204,10 @@ a {
     margin-left: 10px; }
 .lists .item-3 {
   border-bottom: none; }
+.lists__edit-name {
+  cursor: pointer; }
+.lists__delete-list {
+  cursor: pointer; }
 
 .list__task-delete {
   cursor: pointer;
