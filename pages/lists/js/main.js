@@ -12,6 +12,9 @@ toDoList.addEventListener('click', function (event) {
             const p = div.querySelector('.lists__list-name')
             trocaNome(p)
         }
+        if (event.target.classList.contains('lists__delete-list')) {
+            deletar(event.target.parentNode.parentNode)
+        }
         if (event.target.classList.contains('list__subtask-delete')) {
             deletar(event.target)
         }
