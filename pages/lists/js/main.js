@@ -1,6 +1,11 @@
 const toDoList = document.querySelector('.lists')
 
 toDoList.addEventListener('click', function (event) {
+    if(event.target.tagName === 'INPUT'){
+        if (event.target.classList.contains('list__task-checkbox')){
+            tarefaConcluida(event.target)
+        }
+    }
     if (event.target.tagName === 'IMG') {
         if (event.target.classList.contains('list__subtask-delete')) {
             deletar(event.target)
