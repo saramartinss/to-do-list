@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 525px;
+        max-width: 525px;
         margin: 0 auto;
     }
     &__logo{
@@ -22,7 +22,7 @@
 }
 
 .container-tasks{
-    width: 440px;
+    // width: 440px;
     margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@
             }
         }
         &-add-task{
-            width: 440px;
+            // width: 440px;
         }
         &-tasks{
             .list{
@@ -80,6 +80,7 @@
                     padding: 5px 0 0 10px;
                     div{
                         display: flex;
+                        align-items: center;
                     }
                 }
                 &__add-subtask{
@@ -92,17 +93,22 @@
         border-bottom: none;
     }
     &__input-add-task{
-        width: 400px;
+        // width: 400px;
     }
     &__input-add-subtask{
-        width: 380px;
+        // width: 380px;
     }
 }
 
 .list__task-delete {
     cursor: pointer;
+    width: 11px;
+    height: 15px;
 }
 
 .list__subtask-delete{
     cursor: pointer;
+    width: 11px;
+    height: 15px;
 }
+
