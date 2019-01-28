@@ -7,6 +7,11 @@ toDoList.addEventListener('click', function (event) {
         }
     }
     if (event.target.tagName === 'IMG') {
+        if (event.target.classList.contains('lists__edit-name')) {
+            const div = event.target.parentNode.parentNode
+            const p = div.querySelector('.lists__list-name')
+            trocaNome(p)
+        }
         if (event.target.classList.contains('list__subtask-delete')) {
             deletar(event.target)
         }
