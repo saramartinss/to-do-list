@@ -17,7 +17,7 @@ a {
   font-family: sfProDisplay;
   src: url("../fonts/SF-Pro-Display-Light.otf") format("otf"), url("../fonts/sf-pro-display-light-webfont.woff") format("woff"), url("../fonts/sf-pro-display-light-webfont.woff2") format("woff2"); }
 .container {
-  width: 525px;
+  max-width: 525px;
   margin: 0 auto;
   padding: 20px 0; }
 
@@ -28,6 +28,9 @@ a {
 .checked {
   text-decoration: line-through; }
 
+@media only screen and (max-width: 580px) {
+  .container {
+    width: 95%; } }
 .background-color {
   height: 100vh;
   background: rgba(242, 240, 196, 0.7); }
@@ -143,7 +146,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 525px;
+    max-width: 525px;
     margin: 0 auto; }
   .navbar__logo {
     height: 25px; }
@@ -155,7 +158,6 @@ a {
       height: 40px; }
 
 .container-tasks {
-  width: 440px;
   margin: 0 auto; }
 
 .box {
@@ -179,8 +181,6 @@ a {
     .lists__item-name img {
       height: 15px;
       margin-right: 10px; }
-  .lists__item-add-task {
-    width: 440px; }
   .lists__item-tasks .list__task {
     padding: 10px 5px; }
     .lists__item-tasks .list__task-name {
@@ -198,21 +198,22 @@ a {
     justify-content: space-between;
     padding: 5px 0 0 10px; }
     .lists__item-tasks .list__subtask div {
-      display: flex; }
+      display: flex;
+      align-items: center; }
   .lists__item-tasks .list__add-subtask {
     margin-left: 10px; }
 .lists .item-3 {
   border-bottom: none; }
-.lists__input-add-task {
-  width: 400px; }
-.lists__input-add-subtask {
-  width: 380px; }
 
 .list__task-delete {
-  cursor: pointer; }
+  cursor: pointer;
+  width: 11px;
+  height: 15px; }
 
 .list__subtask-delete {
-  cursor: pointer; }
+  cursor: pointer;
+  width: 11px;
+  height: 15px; }
 
 .create-list__form span {
   color: red;
